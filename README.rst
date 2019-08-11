@@ -72,9 +72,24 @@ In your ``models.py``
 
 ::
 
+    >>> from django_address.models import SubDistrict
     >>> from app.models import Profile
     >>>
-    >>> profile = Profile.objects.first()
+    >>> sub_district = SubDistrict.objects.first()
+    >>> profile_data {'name': 'Summon Agus', 'email': 'summon@mail.com', 'phone': '+6282133338888',
+                      'address': 'Jl. Karto Dimejo', 'number': 35, 'na': 3, 'ca': 34, 'village': 'Sinduarjo',
+                      'sub_district': sub_district}
+    >>> profile = Profile.objects.create(**profile_data)
+    >>> profile.number
+    35
+    >>> profile.address
+    'Jl. Karto Dimejo'
+    >>> profile.village
+    'Sinduarjo'
+    >>> profile.sub_district
+    'Ngaglik'
+    >>> profile.sub_district.district
+    'Sleman'
     >>> profile.get_full_address(format_address='id', include_country=True)
     'Jl. Karto Dimejo No.35, RT.3/RW.34 Sinduarjo, Ngaglik, Sleman, Yogyakarta, Indonesia - 55581'
     >>>
@@ -84,13 +99,13 @@ In your ``models.py``
       'ca': 34,
       'number': 35,
       'village': 'Sinduarjo',
+      'address': 'Jl. Karto Dimejo',
       'district': {
         'id': 1,
         'name': 'Sleman',
         'deleted_at': None,
         'province': 1
       },
-      'address': 'Jl. Karto Dimejo',
       'sub_district': {
         'id': 1,
         'district': 1,
