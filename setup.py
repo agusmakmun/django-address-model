@@ -3,7 +3,7 @@
 
 from setuptools import (setup, find_packages)
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 setup(
     name='django-address-model',
@@ -11,7 +11,7 @@ setup(
     packages=find_packages(exclude=["*demo"]),
     include_package_data=True,
     zip_safe=False,
-    description='Django Address',
+    description='Django Address Model',
     url='https://github.com/agusmakmun/django-address-model',
     download_url='https://github.com/agusmakmun/django-address-model/tarball/v%s' % __version__,
     keywords=['django address', 'django address model'],

@@ -13,8 +13,7 @@ sub district, district, province, country, postal code, currency code, phone cod
 
 **Support Languages**
 
-1. English
-2. Indonesia
+1. ID - Indonesia
 
 
 Quick start
@@ -41,7 +40,7 @@ Quick start
 
 ::
 
-    python manage.py create_address --language=en --show-print=true
+    python manage.py create_address --language=id --show-print=true
 
 
 
@@ -65,7 +64,7 @@ In your ``models.py``
             return self.name
 
         class Meta:
-            ordering = ('id',)
+            ordering = ('-id',)
 
 
 `ORM Usage Example`

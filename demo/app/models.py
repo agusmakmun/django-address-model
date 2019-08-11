@@ -14,4 +14,4 @@ class Profile(AddressModel, models.Model):
         return self.name
 
     class Meta:
-        ordering = ('id',)
+        ordering = ('-id',)
