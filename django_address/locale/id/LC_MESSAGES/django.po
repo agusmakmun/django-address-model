@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-11 09:05+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: admin.py:42 models.py:104 models.py:113
+msgid "Province"
+msgstr "Propinsi"
+
+#: apps.py:10
+msgid "Django Address"
+msgstr "Django Alamat"
+
+#: management/commands/create_address.py:25
+msgid "Command to generate an initial address"
+msgstr "Perintah untuk menghasilkan alamat baru"
+
+#: management/commands/create_address.py:29
+msgid "Language code of country"
+msgstr "Kode bahasa negara"
+
+#: management/commands/create_address.py:31
+msgid "To show the print or not"
+msgstr "Untuk menunjukkan hasil cetak atau tidak"
+
+#: management/commands/create_address.py:55
+#, python-format
+msgid "[+] Created a country %(country)s"
+msgstr "[+] Sebuah negara telah dibuat %(country)s"
+
+#: management/commands/create_address.py:64
+#, python-format
+msgid "[*] Updated a country %(country_data)s"
+msgstr "[*] Sebuah negara telah disunting %(country_data)s"
+
+#: management/commands/create_address.py:79
+#, python-format
+msgid "[!] Language code \"%(lang)s\" doesn't available!"
+msgstr "[!] Kode bahasa \"%(lang)s\" tidak tersedia!"
+
+#: management/commands/create_address.py:80
+msgid ""
+"[!] We really opened if you want to contribute and support your language."
+msgstr ""
+"[!] Saya benar-benar membuka jika Anda ingin berkontribusi dan mendukung "
+"bahasa Anda"
+
+#: management/commands/create_address.py:81
+msgid ""
+"[i] Please visit: \"https://github.com/agusmakmun/django-address-model\" to "
+"contribute."
+msgstr ""
+"[i] Mohon kunjungi: \"https://github.com/agusmakmun/django-address-model\" untuk "
+"berkontribusi."
+
+#: management/commands/create_address.py:100
+#, python-format
+msgid "[+] Created a province %(province)s"
+msgstr "[+] Sebuah propinsi telah dibuat %(province)s"
+
+#: management/commands/create_address.py:116
+#, python-format
+msgid "[+] Created a %(district)s > %(sub_district)s"
+msgstr "[+] Telah dibuat %(district)s > %(sub_district)s"
+
+#: models.py:53 models.py:86 models.py:114 models.py:142
+msgid "Name"
+msgstr "Nama"
+
+#: models.py:54
+msgid "States"
+msgstr "Propinsi"
+
+#: models.py:55
+msgid "List of states"
+msgstr "Dafta propinsi"
+
+#: models.py:56
+msgid "Code"
+msgstr "Kode"
+
+#: models.py:57
+msgid "Phone Code"
+msgstr "Kode telepon"
+
+#: models.py:59
+msgid "Currency Code"
+msgstr "Kode mata uang"
+
+#: models.py:76 models.py:85
+msgid "Country"
+msgstr "Negara"
+
+#: models.py:77
+msgid "Countries"
+msgstr "Negara"
+
+#: models.py:105
+msgid "Provinces"
+msgstr "Propinsi"
+
+#: models.py:132 models.py:141
+msgid "District"
+msgstr "Kabupaten"
+
+#: models.py:133
+msgid "Districts"
+msgstr "Kabupaten"
+
+#: models.py:143
+msgid "Postal Code"
+msgstr "Kode Pos"
+
+#: models.py:153 models.py:206
+msgid "Sub District"
+msgstr "Kecamatan"
+
+#: models.py:154
+msgid "Sub Districts"
+msgstr "Kecamatan"
+
+#: models.py:207
+msgid "Address"
+msgstr "Alamat"
+
+#: models.py:208
+msgid "Village"
+msgstr "Kelurahan/Desa"
+
+#: models.py:209
+msgid "Number"
+msgstr "No."
+
+#: models.py:210
+msgid "NA"
+msgstr "RT"
+
+#: models.py:211
+msgid "Neighborhood Association"
+msgstr "Rukun Tetangga"
+
+#: models.py:212
+msgid "CA"
+msgstr "RW"
+
+#: models.py:213
+msgid "Citizens Association"
+msgstr "Rukun Warga"
