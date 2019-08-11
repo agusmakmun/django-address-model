@@ -37,6 +37,13 @@ Quick start
     ]
 
 
+3. Create an initial address
+
+::
+
+    python manage.py create_address --language=en --show-print=true
+
+
 
 Usage Example
 -------------
