@@ -49,7 +49,6 @@ class DefaultManager(models.Manager):
 
 @python_2_unicode_compatible
 class Country(TimeStampedModel):
-    id = models.BigAutoField(primary_key=True)
     name = models.CharField(_('Name'), max_length=200)
     states = models.TextField(_('States'), null=True, blank=True,
                               help_text=_('List of states'))
@@ -79,7 +78,6 @@ class Country(TimeStampedModel):
 
 @python_2_unicode_compatible
 class Province(TimeStampedModel):
-    id = models.BigAutoField(primary_key=True)
     country = models.ForeignKey(Country, related_name='provinces',
                                 on_delete=models.CASCADE,
                                 verbose_name=_('Country'))
@@ -107,7 +105,6 @@ class Province(TimeStampedModel):
 
 @python_2_unicode_compatible
 class District(TimeStampedModel):
-    id = models.BigAutoField(primary_key=True)
     province = models.ForeignKey(Province, related_name='districts',
                                  on_delete=models.CASCADE,
                                  verbose_name=_('Province'))
@@ -135,7 +132,6 @@ class District(TimeStampedModel):
 
 @python_2_unicode_compatible
 class SubDistrict(TimeStampedModel):
-    id = models.BigAutoField(primary_key=True)
     district = models.ForeignKey(District, related_name='sub_districts',
                                  on_delete=models.CASCADE,
                                  verbose_name=_('District'))
