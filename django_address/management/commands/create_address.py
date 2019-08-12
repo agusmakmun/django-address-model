@@ -41,7 +41,7 @@ class Command(BaseCommand):
         countries_code_path = os.path.join(DJANGO_ADDRESS_PATH, 'fixtures/countries-code.json')
 
         # clear all countries
-        Country.objects.delete()
+        Country.objects.all().delete()
 
         countries_list = json.load(open(countries_path)).get('countries', [])
         for country_data in countries_list:
@@ -85,9 +85,9 @@ class Command(BaseCommand):
         country = Country.objects.get(name__iexact=addresses_data.get('country'))
 
         # clear all address
-        SubDistrict.objects.delete()
-        District.objects.delete()
-        Province.objects.delete()
+        SubDistrict.objects.all().delete()
+        District.objects.all().delete()
+        Province.objects.all().delete()
 
         provinces_dict = {}
         for province_code, province_data in addresses_data.get('provinces', {}).items():

@@ -100,18 +100,18 @@ In your ``models.py``
       'number': 35,
       'village': 'Sinduarjo',
       'address': 'Jl. Karto Dimejo',
-      'district': {
-        'id': 1,
-        'name': 'Sleman',
-        'deleted_at': None,
-        'province': 1
-      },
       'sub_district': {
         'id': 1,
         'district': 1,
         'deleted_at': None,
         'postal_code': '55581',
         'name': 'Ngaglik'
+      },
+      'district': {
+        'id': 1,
+        'name': 'Sleman',
+        'deleted_at': None,
+        'province': 1
       },
       'province': {
         'id': 1,
