@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-11 09:05+0700\n"
+"POT-Creation-Date: 2020-11-18 16:45+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: admin.py:42 models.py:104 models.py:113
+#: admin.py:46 models.py:99 models.py:106
 msgid "Province"
 msgstr ""
 
@@ -74,86 +74,86 @@ msgstr ""
 msgid "[+] Created a %(district)s > %(sub_district)s"
 msgstr ""
 
-#: models.py:53 models.py:86 models.py:114 models.py:142
+#: models.py:50 models.py:81 models.py:107 models.py:133
 msgid "Name"
 msgstr ""
 
-#: models.py:54
+#: models.py:51
 msgid "States"
 msgstr ""
 
-#: models.py:55
+#: models.py:52
 msgid "List of states"
 msgstr ""
 
-#: models.py:56
+#: models.py:53
 msgid "Code"
 msgstr ""
 
-#: models.py:57
+#: models.py:54
 msgid "Phone Code"
 msgstr ""
 
-#: models.py:59
+#: models.py:56
 msgid "Currency Code"
 msgstr ""
 
-#: models.py:76 models.py:85
+#: models.py:73 models.py:80
 msgid "Country"
 msgstr ""
 
-#: models.py:77
+#: models.py:74
 msgid "Countries"
 msgstr ""
 
-#: models.py:105
+#: models.py:100
 msgid "Provinces"
 msgstr ""
 
-#: models.py:132 models.py:141
+#: models.py:125 models.py:132
 msgid "District"
 msgstr ""
 
-#: models.py:133
+#: models.py:126
 msgid "Districts"
 msgstr ""
 
-#: models.py:143
+#: models.py:134
 msgid "Postal Code"
 msgstr ""
 
-#: models.py:153 models.py:206
+#: models.py:144 models.py:197
 msgid "Sub District"
 msgstr ""
 
-#: models.py:154
+#: models.py:145
 msgid "Sub Districts"
 msgstr ""
 
-#: models.py:207
+#: models.py:198
 msgid "Address"
 msgstr ""
 
-#: models.py:208
+#: models.py:199
 msgid "Village"
 msgstr ""
 
-#: models.py:209
+#: models.py:200
 msgid "Number"
 msgstr ""
 
-#: models.py:210
+#: models.py:201
 msgid "NA"
 msgstr ""
 
-#: models.py:211
+#: models.py:202
 msgid "Neighborhood Association"
 msgstr ""
 
-#: models.py:212
+#: models.py:203
 msgid "CA"
 msgstr ""
 
-#: models.py:213
+#: models.py:204
 msgid "Citizens Association"
 msgstr ""
