@@ -5,7 +5,6 @@ from django.db import models
 from django.conf import settings
 from django.forms.models import model_to_dict
 from django.utils.translation import ugettext_lazy as _
-from django.utils.encoding import python_2_unicode_compatible
 
 from .utils import parse_json_string
 
@@ -47,7 +46,6 @@ class DefaultManager(models.Manager):
         return self.filter(deleted_at__isnull=False)
 
 
-@python_2_unicode_compatible
 class Country(TimeStampedModel):
     name = models.CharField(_('Name'), max_length=200)
     states = models.TextField(_('States'), null=True, blank=True,
@@ -76,7 +74,6 @@ class Country(TimeStampedModel):
         verbose_name_plural = _('Countries')
 
 
-@python_2_unicode_compatible
 class Province(TimeStampedModel):
     country = models.ForeignKey(Country, related_name='provinces',
                                 on_delete=models.CASCADE,
@@ -103,7 +100,6 @@ class Province(TimeStampedModel):
         verbose_name_plural = _('Provinces')
 
 
-@python_2_unicode_compatible
 class District(TimeStampedModel):
     province = models.ForeignKey(Province, related_name='districts',
                                  on_delete=models.CASCADE,
@@ -130,7 +126,6 @@ class District(TimeStampedModel):
         verbose_name_plural = _('Districts')
 
 
-@python_2_unicode_compatible
 class SubDistrict(TimeStampedModel):
     district = models.ForeignKey(District, related_name='sub_districts',
                                  on_delete=models.CASCADE,
